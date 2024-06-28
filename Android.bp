@@ -1,0 +1,7 @@
+// Copyright (C) 2020-2024 The LineageOS Project
+
+soong_namespace {
+	imports: [
+		"vendor/huawei/hi3660",
+	],
+}
