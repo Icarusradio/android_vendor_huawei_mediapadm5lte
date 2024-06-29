@@ -13,4 +13,5 @@
 # limitations under the License.
 
 PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/mediapadm5lte/proprietary/odm/,odm/) \
 	$(call find-copy-subdir-files,*,vendor/huawei/mediapadm5lte/proprietary/vendor/,vendor/)
