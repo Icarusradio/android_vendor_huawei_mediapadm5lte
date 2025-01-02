@@ -17,6 +17,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/huawei/mediapadm5lte
 
 PRODUCT_PACKAGES += \
-    libril-hisi
+    libril
 
 $(call inherit-product, vendor/huawei/mediapadm5lte/mediapadm5lte-vendor-blobs.mk)
