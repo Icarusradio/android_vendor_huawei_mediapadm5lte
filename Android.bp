@@ -24,6 +24,266 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "both",
 	check_elf_files: false,
+	stl: "none",
+	system_shared_libs: [],
 	prefer: true,
 	soc_specific: true,
+}
+
+// Architecture-specific declarations for the unchanged EMUI shared libraries.
+// See proprietary-libraries.mk for product installation.
+
+cc_prebuilt_library_shared {
+    name: "mediapadm5lte_vendor_ese_hw_hal",
+    stem: "ese_hw_hal",
+    owner: "huawei",
+    soc_specific: true,
+    compile_multilib: "64",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/ese_hw_hal.so"],
+        },
+    },
+    strip: { none: true },
+    check_elf_files: false,
+    stl: "none",
+    system_shared_libs: [],
+}
+
+cc_prebuilt_library_shared {
+    name: "mediapadm5lte_vendor_lib_wifi_sar",
+    stem: "lib_wifi_sar",
+    owner: "huawei",
+    soc_specific: true,
+    compile_multilib: "64",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/lib_wifi_sar.so"],
+        },
+    },
+    strip: { none: true },
+    check_elf_files: false,
+    stl: "none",
+    system_shared_libs: [],
+}
+
+cc_prebuilt_library_shared {
+    name: "mediapadm5lte_vendor_libbalong-ril-1",
+    stem: "libbalong-ril-1",
+    owner: "huawei",
+    soc_specific: true,
+    compile_multilib: "64",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/libbalong-ril-1.so"],
+        },
+    },
+    strip: { none: true },
+    check_elf_files: false,
+    stl: "none",
+    system_shared_libs: [],
+}
+
+cc_prebuilt_library_shared {
+    name: "mediapadm5lte_vendor_libbalong-ril-2",
+    stem: "libbalong-ril-2",
+    owner: "huawei",
+    soc_specific: true,
+    compile_multilib: "64",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/libbalong-ril-2.so"],
+        },
+    },
+    strip: { none: true },
+    check_elf_files: false,
+    stl: "none",
+    system_shared_libs: [],
+}
+
+cc_prebuilt_library_shared {
+    name: "mediapadm5lte_vendor_libbalong-ril",
+    stem: "libbalong-ril",
+    owner: "huawei",
+    soc_specific: true,
+    compile_multilib: "64",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/libbalong-ril.so"],
+        },
+    },
+    strip: { none: true },
+    check_elf_files: false,
+    stl: "none",
+    system_shared_libs: [],
+}
+
+cc_prebuilt_library_shared {
+    name: "mediapadm5lte_vendor_libcommril",
+    stem: "libcommril",
+    owner: "huawei",
+    soc_specific: true,
+    compile_multilib: "64",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/libcommril.so"],
+        },
+    },
+    strip: { none: true },
+    check_elf_files: false,
+    stl: "none",
+    system_shared_libs: [],
+}
+
+cc_prebuilt_library_shared {
+    name: "mediapadm5lte_vendor_vendor.huawei.hardware.hisiradio_1.0",
+    stem: "vendor.huawei.hardware.hisiradio@1.0",
+    owner: "huawei",
+    soc_specific: true,
+    compile_multilib: "64",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/vendor.huawei.hardware.hisiradio@1.0.so"],
+        },
+    },
+    strip: { none: true },
+    check_elf_files: false,
+    stl: "none",
+    system_shared_libs: [],
+}
+
+cc_prebuilt_library_shared {
+    name: "mediapadm5lte_vendor_vendor.huawei.hardware.hisiradio_1.1",
+    stem: "vendor.huawei.hardware.hisiradio@1.1",
+    owner: "huawei",
+    soc_specific: true,
+    compile_multilib: "64",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/vendor.huawei.hardware.hisiradio@1.1.so"],
+        },
+    },
+    strip: { none: true },
+    check_elf_files: false,
+    stl: "none",
+    system_shared_libs: [],
+}
+
+cc_prebuilt_library_shared {
+    name: "mediapadm5lte_vendor_vendor.huawei.hardware.hisiradio_1.2",
+    stem: "vendor.huawei.hardware.hisiradio@1.2",
+    owner: "huawei",
+    soc_specific: true,
+    compile_multilib: "64",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/vendor.huawei.hardware.hisiradio@1.2.so"],
+        },
+    },
+    strip: { none: true },
+    check_elf_files: false,
+    stl: "none",
+    system_shared_libs: [],
+}
+
+cc_prebuilt_library_shared {
+    name: "mediapadm5lte_vendor_vendor.huawei.hardware.radio.chr_1.0",
+    stem: "vendor.huawei.hardware.radio.chr@1.0",
+    owner: "huawei",
+    soc_specific: true,
+    compile_multilib: "64",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/vendor.huawei.hardware.radio.chr@1.0.so"],
+        },
+    },
+    strip: { none: true },
+    check_elf_files: false,
+    stl: "none",
+    system_shared_libs: [],
+}
+
+cc_prebuilt_library_shared {
+    name: "mediapadm5lte_vendor_vendor.huawei.hardware.radio.deprecated_1.0",
+    stem: "vendor.huawei.hardware.radio.deprecated@1.0",
+    owner: "huawei",
+    soc_specific: true,
+    compile_multilib: "64",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/vendor.huawei.hardware.radio.deprecated@1.0.so"],
+        },
+    },
+    strip: { none: true },
+    check_elf_files: false,
+    stl: "none",
+    system_shared_libs: [],
+}
+
+cc_prebuilt_library_shared {
+    name: "mediapadm5lte_vendor_vendor.huawei.hardware.radio.ims_1.0",
+    stem: "vendor.huawei.hardware.radio.ims@1.0",
+    owner: "huawei",
+    soc_specific: true,
+    compile_multilib: "64",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/vendor.huawei.hardware.radio.ims@1.0.so"],
+        },
+    },
+    strip: { none: true },
+    check_elf_files: false,
+    stl: "none",
+    system_shared_libs: [],
+}
+
+cc_prebuilt_library_shared {
+    name: "mediapadm5lte_vendor_vendor.huawei.hardware.radio.ims_1.1",
+    stem: "vendor.huawei.hardware.radio.ims@1.1",
+    owner: "huawei",
+    soc_specific: true,
+    compile_multilib: "64",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/vendor.huawei.hardware.radio.ims@1.1.so"],
+        },
+    },
+    strip: { none: true },
+    check_elf_files: false,
+    stl: "none",
+    system_shared_libs: [],
+}
+
+cc_prebuilt_library_shared {
+    name: "mediapadm5lte_vendor_vendor.huawei.hardware.radio.ims_1.2",
+    stem: "vendor.huawei.hardware.radio.ims@1.2",
+    owner: "huawei",
+    soc_specific: true,
+    compile_multilib: "64",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/vendor.huawei.hardware.radio.ims@1.2.so"],
+        },
+    },
+    strip: { none: true },
+    check_elf_files: false,
+    stl: "none",
+    system_shared_libs: [],
+}
+
+cc_prebuilt_library_shared {
+    name: "mediapadm5lte_vendor_vendor.huawei.hardware.radio_2.0",
+    stem: "vendor.huawei.hardware.radio@2.0",
+    owner: "huawei",
+    soc_specific: true,
+    compile_multilib: "64",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/vendor.huawei.hardware.radio@2.0.so"],
+        },
+    },
+    strip: { none: true },
+    check_elf_files: false,
+    stl: "none",
+    system_shared_libs: [],
 }

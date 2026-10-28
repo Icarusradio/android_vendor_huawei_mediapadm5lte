@@ -12,6 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Shared libraries are installed by architecture-specific Soong modules.
 PRODUCT_COPY_FILES += \
-	$(call find-copy-subdir-files,*,vendor/huawei/mediapadm5lte/proprietary/odm/,odm/) \
-	$(call find-copy-subdir-files,*,vendor/huawei/mediapadm5lte/proprietary/vendor/,vendor/)
+    $(filter-out vendor/huawei/mediapadm5lte/proprietary/odm/lib/%.so vendor/huawei/mediapadm5lte/proprietary/odm/lib64/%.so vendor/huawei/mediapadm5lte/proprietary/vendor/lib/%.so vendor/huawei/mediapadm5lte/proprietary/vendor/lib64/%.so, \
+        $(call find-copy-subdir-files,*,vendor/huawei/mediapadm5lte/proprietary/odm/,odm/) \
+        $(call find-copy-subdir-files,*,vendor/huawei/mediapadm5lte/proprietary/vendor/,vendor/))
+
+$(call inherit-product, vendor/huawei/mediapadm5lte/proprietary-libraries.mk)
