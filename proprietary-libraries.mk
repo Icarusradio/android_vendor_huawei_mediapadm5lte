@@ -8,10 +8,7 @@ PRODUCT_PACKAGES += \
     mediapadm5lte_vendor_libcommril \
     mediapadm5lte_vendor_vendor.huawei.hardware.hisiradio_1.0 \
     mediapadm5lte_vendor_vendor.huawei.hardware.hisiradio_1.1 \
-    mediapadm5lte_vendor_vendor.huawei.hardware.hisiradio_1.2 \
     mediapadm5lte_vendor_vendor.huawei.hardware.radio.chr_1.0 \
     mediapadm5lte_vendor_vendor.huawei.hardware.radio.deprecated_1.0 \
     mediapadm5lte_vendor_vendor.huawei.hardware.radio.ims_1.0 \
-    mediapadm5lte_vendor_vendor.huawei.hardware.radio.ims_1.1 \
-    mediapadm5lte_vendor_vendor.huawei.hardware.radio.ims_1.2 \
     mediapadm5lte_vendor_vendor.huawei.hardware.radio_2.0
